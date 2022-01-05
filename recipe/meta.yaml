@@ -15,15 +15,12 @@ build:
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - raven-wps=raven.cli:cli
-  run_exports:
-    strong:
-      - {{ pin_subpackage('gdal', max_pin='3.4.0') }}
 
 requirements:
   host:
     - python >=3.7
     - numpy >=1.20
-    - gdal
+    - gdal ==3.4.0
     - pip
   run:
     - python >=3.7
@@ -36,7 +33,7 @@ requirements:
     - click
     - dask
     - fiona
-    - gdal
+    - gdal ==3.4.0
     - geopandas
     - geojson
     - ipyleaflet
