@@ -35,7 +35,6 @@ requirements:
     - fiona
     - geopandas
     - geojson
-    - gdal >=3.0
     - ipyleaflet
     - jinja2
     - matplotlib-base
@@ -65,6 +64,9 @@ requirements:
     - xclim >=0.29.0
     - xskillscore
     - pip
+  run_exports:
+    strong:
+      - gdal
 
 # TODO: We need more tests here
 test:
