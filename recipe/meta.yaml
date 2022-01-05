@@ -10,7 +10,7 @@ source:
   sha256: 48e88d1dddba98d604f7962d29a725957ada95c75b3c7ded0f959e3170857059
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
@@ -20,7 +20,7 @@ requirements:
   host:
     - python >=3.7
     - numpy >=1.20
-    - gdal >=3.0
+    - gdal ==3.4.0
     - pip
   run:
     - python >=3.7
@@ -33,9 +33,9 @@ requirements:
     - click
     - dask
     - fiona
+    - gdal ==3.4.0
     - geopandas
     - geojson
-    - gdal >=3.0
     - ipyleaflet
     - jinja2
     - matplotlib-base
