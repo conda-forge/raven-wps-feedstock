@@ -17,7 +17,7 @@ build:
     - raven-wps=raven.cli:cli
   run_exports:
     strong:
-      - gdal >=3.0
+      - {{ pin_subpackage('gdal', max_pin='3.4.0') }}
 
 requirements:
   host:
