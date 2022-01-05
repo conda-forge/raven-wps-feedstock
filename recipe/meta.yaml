@@ -17,10 +17,13 @@ build:
     - raven-wps=raven.cli:cli
 
 requirements:
+  build:
+    run_exports:
+      gdal >=3.0
   host:
     - python >=3.7
     - numpy >=1.20
-    - gdal >=3.0
+    - gdal
     - pip
   run:
     - python >=3.7
@@ -33,6 +36,7 @@ requirements:
     - click
     - dask
     - fiona
+    - gdal
     - geopandas
     - geojson
     - ipyleaflet
@@ -64,9 +68,6 @@ requirements:
     - xclim >=0.29.0
     - xskillscore
     - pip
-  run_exports:
-    strong:
-      - gdal
 
 # TODO: We need more tests here
 test:
