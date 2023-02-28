@@ -1,11 +1,11 @@
-About raven-wps
-===============
+About raven-wps-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/raven-wps-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Ouranosinc/raven
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/raven-wps-feedstock/blob/main/LICENSE.txt)
 
 Summary: An open source server project offering hydrological modeling and analysis capabilities through the Web Processing Service (WPS) standard
 
