@@ -38,6 +38,7 @@ requirements:
     - gdal >=3.0
     - geopandas
     - geojson
+    - gevent
     - ipyleaflet
     - jinja2
     - matplotlib-base
@@ -53,6 +54,7 @@ requirements:
     - pysheds
     - rasterio
     - rasterstats
+    - requests
     - rioxarray
     - rtree
     - scipy
