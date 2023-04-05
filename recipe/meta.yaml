@@ -1,5 +1,5 @@
 {% set name = "raven-wps" %}
-{% set version = "0.17.0" %}
+{% set version = "0.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Ouranosinc/raven/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b82d9e7c3697eb9d01c94fb12fdf46714279ac6610be18f63cc0d106f8eb5e82
+  sha256: 7945db3b0de922c31ca5a8d5712b36470d3e205910ea77aef436f5b40583eb3f
 
 build:
   number: 0
@@ -38,13 +38,14 @@ requirements:
     - gdal >=3.0
     - geopandas
     - geojson
+    - gevent
     - ipyleaflet
     - jinja2
     - matplotlib-base
     - nbval
     - numpy
     - owslib
-    - pandas
+    - pandas <2.0
     - poppler
     - psutil
     - psycopg2
@@ -53,6 +54,7 @@ requirements:
     - pysheds
     - rasterio
     - rasterstats
+    - requests
     - rioxarray
     - rtree
     - scipy
