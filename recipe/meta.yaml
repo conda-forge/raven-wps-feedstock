@@ -1,5 +1,5 @@
 {% set name = "raven-wps" %}
-{% set version = "0.17.1" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Ouranosinc/raven/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 7945db3b0de922c31ca5a8d5712b36470d3e205910ea77aef436f5b40583eb3f
+  sha256: eeb30d43e93c57468928d47cba8879887c51d5c02d97e6f749fcdccaf4a202c9
 
 build:
   number: 0
