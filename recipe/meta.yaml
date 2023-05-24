@@ -21,54 +21,40 @@ build:
 requirements:
   host:
     - python >=3.8
-    - numpy >=1.20
-    - gdal >=3.0
     - pip
   run:
     - python >=3.8
-    - raven-hydro ==3.6
-    - ostrich ==21.03.16
-    - ravenpy >=0.11.0
-    - pywps ==4.5.1
-    - affine
-    - cartopy
+    - pip
     - click
-    - dask
-    - fiona >=1.9,<2.0
-    - gdal >=3.0
-    - geopandas
-    - geojson
-    - gevent
-    - ipyleaflet
     - jinja2
-    - matplotlib-base
-    - nbval
+    - matplotlib
+    - netCDF4
     - numpy
-    - owslib
-    - pandas <2.0
-    - poppler
+    - owslib <0.29
+    - pandas<2.0  # Pinned for xarray<=2023.3.0 compatibility.
     - psutil
-    - psycopg2
-    - pymetalink
+    - pywps ==4.5.1
+    - requests
+    - xarray >=0.18
+    - xclim >=0.31.0
+    # GIS libraries
+    - affine
+    - fiona >=1.9.0,<2.0
+    - geojson
+    - geopanda
+    - pyogrio
     - pyproj >=3.4
     - pysheds
     - rasterio
     - rasterstats
-    - requests
     - rioxarray
-    - rtree
-    - scipy
-    - setuptools
     - shapely
-    - spotpy
-    - statsmodels
-    - tbb
+    # Docs and other utilities
+    - fsspec
+    - psycopg2 # to use postgres to log pywps requests like in Prod
+    - pymetalink
     - unidecode
-    - urlpath
-    - xarray >=0.18
-    - xclim >=0.31.0
-    - xskillscore
-    - pip
+
 
 # TODO: We need more tests here
 test:
