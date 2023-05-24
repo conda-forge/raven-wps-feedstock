@@ -27,11 +27,11 @@ requirements:
     - pip
     - click
     - jinja2
-    - matplotlib
+    - matplotlib-base
     - netCDF4
     - numpy
     - owslib <0.29
-    - pandas<2.0  # Pinned for xarray<=2023.3.0 compatibility.
+    - pandas <2.0  # Pinned for xarray<=2023.3.0 compatibility.
     - psutil
     - pywps ==4.5.1
     - requests
