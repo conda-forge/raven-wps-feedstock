@@ -41,7 +41,7 @@ requirements:
     - affine
     - fiona >=1.9.0,<2.0
     - geojson
-    - geopanda
+    - geopandas
     - pyogrio
     - pyproj >=3.4
     - pysheds
