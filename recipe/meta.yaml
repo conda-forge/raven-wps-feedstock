@@ -1,5 +1,5 @@
 {% set name = "raven-wps" %}
-{% set version = "0.18.0" %}
+{% set version = "0.18.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/Ouranosinc/raven/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: eeb30d43e93c57468928d47cba8879887c51d5c02d97e6f749fcdccaf4a202c9
+  sha256: 1429dcf77aaf1fedb6e5166b9c324a111310f529d5f5a69f8359f4a74286d810
 
 build:
   number: 0
-  noarch: python
+#  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - raven-wps=raven.cli:cli
@@ -20,11 +20,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python
     - pip
     - flit
   run:
-    - python >=3.8
+    - python
     - pip
     - click
     - jinja2
@@ -32,7 +32,8 @@ requirements:
     - netCDF4
     - numpy
     - owslib <0.29
-    - pandas <2.0  # Pinned for xarray<=2023.3.0 compatibility.
+    - pandas <2.0  # [py==38]
+    - pandas  # [py>=39]
     - psutil
     - pywps ==4.5.1
     - requests
@@ -55,7 +56,6 @@ requirements:
     - psycopg2 # to use postgres to log pywps requests like in Prod
     - pymetalink
     - unidecode
-
 
 # TODO: We need more tests here
 test:
