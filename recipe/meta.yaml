@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Ouranosinc/raven/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: eeb30d43e93c57468928d47cba8879887c51d5c02d97e6f749fcdccaf4a202c9
+  sha256: 1429dcf77aaf1fedb6e5166b9c324a111310f529d5f5a69f8359f4a74286d810
 
 build:
   number: 0
