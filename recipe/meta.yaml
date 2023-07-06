@@ -31,7 +31,7 @@ requirements:
     - matplotlib-base
     - netCDF4
     - numpy
-    - owslib <0.29
+    - owslib
     - pandas <2.0  # [py==38]
     - pandas  # [py>=39]
     - psutil
@@ -41,7 +41,7 @@ requirements:
     - xclim >=0.31.0
     # GIS libraries
     - affine
-    - fiona >=1.9.0,<2.0
+    - fiona >=1.9.0
     - geojson
     - geopandas
     - pyogrio
@@ -49,6 +49,7 @@ requirements:
     - pysheds
     - rasterio
     - rasterstats
+    - requests
     - rioxarray
     - shapely
     # Docs and other utilities
@@ -62,7 +63,6 @@ test:
   requires:
     - make
     - pip
-    - pytest-json-report # Added due to a packaging bug with ESMPy. See: https://github.com/esmf-org/esmf/issues/115
   source_files:
     - Makefile
   commands:
@@ -76,14 +76,14 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: An open source server project offering hydrological modeling and analysis capabilities through the Web Processing Service (WPS) standard
+  summary: An open source server project offering data collection and preparation, as well as geoprocessing and catchment delineation through the Web Processing Service (WPS) standard
   description: |
-    Raven is a server providing access to hydrological modeling and analysis
-    through the Web Processing Service (WPS) standard. It was made to help
-    hydrologists work with climate data and automate some of the tedious work
-    required to calibrate and run hydrological models. Its modeling engine is
-    the Raven hydrological modeling framework, which can emulate a variety of
-    lumped and distributed models.
+    Raven is an open source server project offering data collection and preparation,
+    as well as geoprocessing and catchment delineation through the Web Processing
+    Service (WPS) standard. Raven processes can be embedded in a graphical user
+    interface or accessed directly from a programming environment. From Python,
+    birdy WPSClient provides a user-friendly python interface to Raven's WPS
+    processes for geospatial processing.
   doc_url: https://pavics-sdi.readthedocs.io/projects/raven/en/latest/
   dev_url: https://github.com/Ouranosinc/raven
 
