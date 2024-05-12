@@ -7,18 +7,18 @@ Home: https://github.com/Ouranosinc/raven
 
 Package license: MIT
 
-Summary: An open source server project offering hydrological modeling and analysis capabilities through the Web Processing Service (WPS) standard
+Summary: An open source server project offering data collection and preparation, as well as geoprocessing and catchment delineation through the Web Processing Service (WPS) standard
 
 Development: https://github.com/Ouranosinc/raven
 
 Documentation: https://pavics-sdi.readthedocs.io/projects/raven/en/latest/
 
-Raven is a server providing access to hydrological modeling and analysis
-through the Web Processing Service (WPS) standard. It was made to help
-hydrologists work with climate data and automate some of the tedious work
-required to calibrate and run hydrological models. Its modeling engine is
-the Raven hydrological modeling framework, which can emulate a variety of
-lumped and distributed models.
+Raven is an open source server project offering data collection and preparation,
+as well as geoprocessing and catchment delineation through the Web Processing
+Service (WPS) standard. Raven processes can be embedded in a graphical user
+interface or accessed directly from a programming environment. From Python,
+birdy WPSClient provides a user-friendly python interface to Raven's WPS
+processes for geospatial processing.
 
 
 Current build status
@@ -53,6 +53,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_64_python3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14929&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/raven-wps-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.12.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_64_python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14929&branchName=main">
@@ -81,6 +88,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_64_python3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14929&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/raven-wps-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.12.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14929&branchName=main">
@@ -106,6 +120,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14929&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/raven-wps-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_python3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14929&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/raven-wps-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -203,7 +224,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
