@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/Ouranosinc/raven/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: ffe96b1cee890ba973fb5c772dad6231ca2c439721194b19bac844dc15fa57d3
+  sha256: db6ee7f1f9b8e10027e3cb4efcb2da5e30b26a56f3962bebb366a3ce37fdee9e
 
 build:
-  number: 0
-#  noarch: python
+  number: 1
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - raven-wps=raven.cli:cli
@@ -20,11 +20,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.9
     - pip
     - flit
   run:
-    - python
+    - python >=3.9
     - pip
     - click
     - jinja2
@@ -32,8 +32,7 @@ requirements:
     - netCDF4
     - numpy
     - owslib
-    - pandas <2.0  # [py==38]
-    - pandas  # [py>=39]
+    - pandas
     - psutil
     - pywps ==4.5.1
     - requests
