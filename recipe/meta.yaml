@@ -10,7 +10,7 @@ source:
   sha256: db6ee7f1f9b8e10027e3cb4efcb2da5e30b26a56f3962bebb366a3ce37fdee9e
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -20,11 +20,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - flit
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - pip
     - click
     - jinja2
@@ -62,6 +62,7 @@ test:
   requires:
     - make
     - pip
+    - python {{ python_min }}
   source_files:
     - Makefile
   commands:
