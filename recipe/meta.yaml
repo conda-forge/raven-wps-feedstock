@@ -1,5 +1,4 @@
 {% set name = "raven-wps" %}
-{% set pypi_name = "birdhouse_raven" %}
 {% set version = "0.19.0" %}
 {% set python_min = "3.9.0" %}
 
@@ -8,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/b/birdhouse_raven/birdhouse_raven-{{ version }}.tar.gz
   sha256: f0554e0025d8c5b742de8a2f13f4a5d50710a97cfe224ab2fca9edf77c841f25
 
 build:
